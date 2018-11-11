@@ -5,7 +5,8 @@ function paintImage(imageNumber) {
   const image = new Image();
   image.src = `./images/${imageNumber}.jpg`;
   image.classList.add("bgImage");
-  body.appendChild(image);
+  // body.appendChild(image);
+  body.prepend(image);
 }
 
 function getRadom() {
